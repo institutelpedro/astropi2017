@@ -1,0 +1,22 @@
+from sense_hat import SenseHat
+sense = SenseHat()
+sense.set_rotation(270)
+
+g = (0, 255, 0)
+r = (255, 0, 0)
+w = (155,155,155)
+e = (0,0,0)
+
+sense.show_message("Hello my name is Paxi")
+
+paxi = [
+    e, r, e, e, e, e, r, e,
+    e, e, g, r, r, g, e, e,
+    e, r, g, g, g, g, r, e,
+    e, r, g, w, w, g, r, e,
+    e, r, w, g, g, w, r, e,
+    e, r, g, w, w, g, r, e,
+    e, e, g, r, r, g, e, e,
+    e, g, g, e, e, g, g, e,
+    ]
+sense.set_pixels(paxi)
